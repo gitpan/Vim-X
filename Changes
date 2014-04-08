@@ -1,5 +1,11 @@
 Revision history for Vim-X
 
+0.1.0 2014-04-07
+ - Adding tests, and pushing as stable.
+
+ [STATISTICS]
+ - code churn: 11 files changed, 97 insertions(+), 28 deletions(-)
+
 0.0.1_0 2014-04-02
  - First version, unleashed on an unsuspecting world.
 

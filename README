@@ -2,7 +2,7 @@ NAME
     Vim::X - Candy for Perl programming in Vim
 
 VERSION
-    version 0.0.1_0
+    version 0.1.0
 
 SYNOPSIS
         package Vim::X::Plugin::MostUsedVariable;

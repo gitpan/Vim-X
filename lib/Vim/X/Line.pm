@@ -3,7 +3,7 @@ BEGIN {
   $Vim::X::Line::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: A line in a Vim buffer
-$Vim::X::Line::VERSION = '0.0.1_0';
+$Vim::X::Line::VERSION = '0.1.0';
 use Moo;
 
 
@@ -40,7 +40,7 @@ sub clone {
 
 sub content { 
     my $self = shift;
-    $self->buffer->set_line( $self->index, @_ ) if @_;
+    $self->buffer->set_line( $self->index, map { split "\n" } @_ ) if @_;
     return $self->buffer->lines_content( $self->index );
 } 
 
@@ -125,7 +125,7 @@ Vim::X::Line - A line in a Vim buffer
 
 =head1 VERSION
 
-version 0.0.1_0
+version 0.1.0
 
 =head1 METHODS
 

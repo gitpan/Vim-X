@@ -3,7 +3,7 @@ BEGIN {
   $Vim::X::Buffer::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: A buffer in Vim
-$Vim::X::Buffer::VERSION = '0.0.1_0';
+$Vim::X::Buffer::VERSION = '0.1.0';
 use Moo;
 
 has "index" => (
@@ -49,8 +49,9 @@ sub line {
 
 
 sub set_line {
-    my( $self, $i, $content ) = @_;
-    $self->_buffer->Set($i => $content);
+    my( $self, $i, @content ) = @_;
+    $self->_buffer->Set($i => shift @content);
+    $self->append( $i => @content ) if @content;
 }
 
 
@@ -85,7 +86,7 @@ Vim::X::Buffer - A buffer in Vim
 
 =head1 VERSION
 
-version 0.0.1_0
+version 0.1.0
 
 =head1 FUNCTIONS
 

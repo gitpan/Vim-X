@@ -4,7 +4,7 @@ Vim::X - Candy for Perl programming in Vim
 
 # VERSION
 
-version 0.0.1\_0
+version 0.1.0
 
 # SYNOPSIS
 

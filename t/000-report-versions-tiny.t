@@ -51,13 +51,14 @@ sub pmver {
 eval { $v .= pmver('Carp','any version') };
 eval { $v .= pmver('Exporter','any version') };
 eval { $v .= pmver('File::Spec','any version') };
+eval { $v .= pmver('File::Which','any version') };
 eval { $v .= pmver('IO::Handle','any version') };
 eval { $v .= pmver('IPC::Open3','any version') };
 eval { $v .= pmver('Module::Build','0.3601') };
 eval { $v .= pmver('Moo','any version') };
-eval { $v .= pmver('Path::Tiny','any version') };
 eval { $v .= pmver('Sub::Attribute','any version') };
 eval { $v .= pmver('Test::Class::Moose','any version') };
+eval { $v .= pmver('Test::Class::Moose::Load','any version') };
 eval { $v .= pmver('Test::More','0.88') };
 eval { $v .= pmver('base','any version') };
 eval { $v .= pmver('overload','any version') };

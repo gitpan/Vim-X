@@ -3,7 +3,7 @@ BEGIN {
   $Vim::X::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: Candy for Perl programming in Vim
-$Vim::X::VERSION = '0.0.1_0';
+$Vim::X::VERSION = '0.1.0';
 use strict;
 use warnings;
 
@@ -38,6 +38,8 @@ END
 }
 
 sub Vim :ATTR_SUB {
+    no warnings 'uninitialized';
+
     my( $class, $sym_ref, undef, undef, $attr_data ) = @_;
 
     my $name = *{$sym_ref}{NAME};
@@ -56,7 +58,7 @@ END
     return;
 }
 
-unless ( $::curbuf ) {
+unless ( $main::curbuf ) {
     package 
         VIM;
     no strict;
@@ -159,7 +161,7 @@ Vim::X - Candy for Perl programming in Vim
 
 =head1 VERSION
 
-version 0.0.1_0
+version 0.1.0
 
 =head1 SYNOPSIS
 

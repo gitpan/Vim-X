@@ -15,16 +15,16 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 74256f374dbb44c08426fde00c590fe6a84809a3 AUTHOR_PLEDGE
-SHA1 1fc0edcb394820e30da1fd756c25c70f138213c8 Build.PL
+SHA1 dcc808bb5849b252e13943a07a479c432f4da307 Build.PL
 SHA1 ce00a7aefe3a318fcd6af7a843a9093c78733fa0 CONTRIBUTORS
-SHA1 b4647defd0343507466305d2c52c947a8bc9f1a2 Changes
+SHA1 8691275b8f77a8644fb53e57b2443e18066ebc03 Changes
 SHA1 1d532e78aac587e0e9f9eeaf9135d09972101733 INSTALL
 SHA1 73f01167fe93f49e71989d82937f26f2b9bb52f2 LICENSE
-SHA1 4e018911942d256b6b72fd41d6d3c4cf0343a324 MANIFEST
-SHA1 a955b201d1ccc326658b35555a421fb2ccff17a2 META.json
-SHA1 a93f7f7225a65261b2e9346ad8ad05e8eb11c872 META.yml
-SHA1 0865a5597b08c173325ff633cf85e4da639455c0 README
-SHA1 fd1c8f2a092ecb5108400eb0e83779b8b720612e README.mkdn
+SHA1 655310349f74e21fc10379f5949026b276af688d MANIFEST
+SHA1 337c3954d308d7ccf44704f733021a2bc0347875 META.json
+SHA1 1fcf10165c3c61184cc9b9ef1cc2e287246f7a0e META.yml
+SHA1 1650f0dea6be21b1610605b2b8366f18290eb1b9 README
+SHA1 a3d98b201ad41eab475773a67ebdc088348532fb README.mkdn
 SHA1 18ecf51bd827c7a9dbaea93d3497fe036cfa7499 contrib/MyMooVim.pm
 SHA1 c942fa2c07a8139f7a8f03e0304f99efbbdd5c70 contrib/MyVim.pm
 SHA1 c0384aadabf69343c18346e58358522ea4abb873 contrib/Vimoose.pm
@@ -35,26 +35,25 @@ SHA1 ae67dd45ff32eb84c5b713639e8fa54f58ad07e6 contrib/myvim.vim
 SHA1 08c0ada506fba1ea3f1155a60e8a7fa7dadcb989 contrib/test.vim
 SHA1 f529ee6d7828f2992a7f9345232502c46e32805c contrib/vim.test
 SHA1 30f6daaaf8676db73e31c0f443bb69373403a509 contrib/vim_prove
-SHA1 e238463e731e107901ef0b60e21b0dc661582065 lib/Vim/X.pm
-SHA1 cf451ea9b246f3c3afad1dc851d0a0122efb381d lib/Vim/X/Buffer.pm
-SHA1 8edef1db76a341bf19f4990eb4ed0ba74d923e1f lib/Vim/X/Line.pm
-SHA1 f7f7e0d3933f6f7d2030f594f0314c645b8a85b3 lib/Vim/X/Plugin/ResolveConflict.pm
-SHA1 ad7406d29852ec26a22526d83dcbb8f1f62af96f lib/Vim/X/Window.pm
+SHA1 df2fe78d824e87ea85f869ae8147015f412faac3 lib/Vim/X.pm
+SHA1 1602b72a1ed29346f73b035b138ad16e37ded519 lib/Vim/X/Buffer.pm
+SHA1 bca66b67c5a7a1a99987f51fcc0f45c85b4648e1 lib/Vim/X/Line.pm
+SHA1 be8197d936cce331e936da3d3659530c041a9601 lib/Vim/X/Plugin/ResolveConflict.pm
+SHA1 6b56945aa856ee5251f18b42cb2ba95a7dc53727 lib/Vim/X/Window.pm
 SHA1 89fd5c4bed2d4268419cea3e285ca469ee5f3ea3 t/00-compile.t
-SHA1 d6ee1854e0b094c9d20bed83872a64381edcfaf9 t/000-report-versions-tiny.t
+SHA1 25d41cb4dbbef82ad44546fc9b92f638610c628c t/000-report-versions-tiny.t
 SHA1 f083b941796ca5439196ca7f0b9ff200e3bb9efa t/TestFor/lib/Vim/X/Line.pm
-SHA1 ab6ae14f48d62446f58a4a461fabb731cbacb711 t/lib/TestsFor/Vim/X.pm
-SHA1 f083b941796ca5439196ca7f0b9ff200e3bb9efa t/lib/TestsFor/Vim/X/Buffer.pm
-SHA1 b795a6fc37f159d7feff0d9d33f00832aef3da80 t/lib/TestsFor/Vim/X/Line.pm
-SHA1 e96cff59dd2e12f65c7bb27ea751ca8182b12cf7 t/lib/TestsFor/Vim/X/_synopsis.pm
-SHA1 d7ae4d01f6cd0df420cda76f4c05aac54c19cdb8 t/lib/VimTest.pm
-SHA1 ca6b14a4802a9fbe378e37bbeda32d0fadd1308c t/run_vim_tests.t
+SHA1 6ceb3d29b919bac02610a3b30038e399f8cc1cfd t/lib/TestsFor/Vim/X.pm
+SHA1 9cbeefba7363b528df09fd0cf66dccab44943495 t/lib/TestsFor/Vim/X/Line.pm
+SHA1 609fdcfe1efc8cc1c817a2cf172b66d986395f5f t/lib/TestsFor/Vim/X/_synopsis.pm
+SHA1 935f8cac9d3bd7200c49ed284ea7b0f533fc3a65 t/lib/VimTest.pm
+SHA1 c1bafcce62be538de8738d65919edd45ea3d7ab7 t/run_vim_tests.t
 SHA1 f083b941796ca5439196ca7f0b9ff200e3bb9efa t/vim/Vim/X/Line.pm
 SHA1 ec3f84bfd7a9ce3246e7592f4134100c6b5ce02b xt/release/unused-vars.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.14 (GNU/Linux)
 
-iEYEARECAAYFAlM8uckACgkQ34Hwf+GwC4yGawCePVTFfmW2TxCAx2/uX9OgDy5C
-h2gAnRjU7KHnPc21qguh1+FrBrMQ4NYd
-=h3TQ
+iEYEARECAAYFAlNDScEACgkQ34Hwf+GwC4yq8QCfUlnfEUPFlgZPiu+mKJV26V7R
+Eq8AoPPen9l954pQNoNcAgJqMSM9qnSk
+=t+3I
 -----END PGP SIGNATURE-----

@@ -18,7 +18,7 @@ my %module_build_args = (
     "Yanick Champoux <yanick\@babyl.dyndns.org>"
   ],
   "dist_name" => "Vim-X",
-  "dist_version" => "0.0.1_0",
+  "dist_version" => "0.1.0",
   "license" => "perl",
   "module_name" => "Vim::X",
   "recommends" => {},
@@ -36,10 +36,11 @@ my %module_build_args = (
   "script_files" => [],
   "test_requires" => {
     "File::Spec" => 0,
+    "File::Which" => 0,
     "IO::Handle" => 0,
     "IPC::Open3" => 0,
-    "Path::Tiny" => 0,
     "Test::Class::Moose" => 0,
+    "Test::Class::Moose::Load" => 0,
     "Test::More" => "0.88",
     "base" => 0,
     "perl" => "5.006"
@@ -49,11 +50,12 @@ my %module_build_args = (
 
 my %fallback_build_requires = (
   "File::Spec" => 0,
+  "File::Which" => 0,
   "IO::Handle" => 0,
   "IPC::Open3" => 0,
   "Module::Build" => "0.3601",
-  "Path::Tiny" => 0,
   "Test::Class::Moose" => 0,
+  "Test::Class::Moose::Load" => 0,
   "Test::More" => "0.88",
   "base" => 0,
   "perl" => "5.006"
