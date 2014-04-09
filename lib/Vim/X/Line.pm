@@ -3,7 +3,7 @@ BEGIN {
   $Vim::X::Line::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: A line in a Vim buffer
-$Vim::X::Line::VERSION = '0.1.0';
+$Vim::X::Line::VERSION = '0.2.0';
 use Moo;
 
 
@@ -125,7 +125,7 @@ Vim::X::Line - A line in a Vim buffer
 
 =head1 VERSION
 
-version 0.1.0
+version 0.2.0
 
 =head1 METHODS
 

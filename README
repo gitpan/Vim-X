@@ -2,7 +2,7 @@ NAME
     Vim::X - Candy for Perl programming in Vim
 
 VERSION
-    version 0.1.0
+    version 0.2.0
 
 SYNOPSIS
         package Vim::X::Plugin::MostUsedVariable;
@@ -74,7 +74,51 @@ DESCRIPTION
         # and then in vim:
         :5,15 call ReverseLines()
 
+   Loading libraries
+    If your collection of functions is growing, "load_function_dir()" can
+    help with their management. See that function below for more details.
+
 FUNCTIONS
+  load_function_dir( $library_dir)
+    Looks into the given *$library_dir* and imports the functions in all
+    files with the extension ".pl" (non-recursively). Each file must have
+    the name of its main function to be imported to Vim-space.
+
+    To have good start-up time, and to avoid loading all dependencies even
+    for unused functions, the different files aren't sourced at start-up,
+    but are using the "autocmd" function of Vim to load those files only if
+    used.
+
+    E.g.,
+
+        # in ~/.vim/vimx/perlweekly/PWGetInfo.pl
+        use Vim::X;
+
+        use LWP::UserAgent;
+        use Web::Query;
+        use Escape::Houdini;
+
+        sub PWGetInfo :Vim() {
+            ...;
+        }
+
+        # in .vimrc
+        perl use Vim::X;
+
+        autocmd BufNewFile,BufRead **/perlweekly/src/*.mkd 
+                    \ perl Vim::X::load_function_dir('~/.vim/vimx/perlweekly')
+        autocmd BufNewFile,BufRead **/perlweekly/src/*.mkd 
+                    \ map <leader>pw :call PWGetInfo()<CR>
+
+    And there you do, the mapping '<leader>pw' will only be created if a
+    markdown file within the perlweekly directory will be visited.
+
+  load_function_file( $file_path )
+    Loads the code within *$file_path* under the namespace
+    *Vim::X::Function::$name*, where name if the basename of the
+    *$file_path*, minus the ".pl" extension. Not that useful by itself, but
+    used by "load_function_dir".
+
   vim_msg( @text )
     Display the strings of *@text* concatenated as a vim message.
 

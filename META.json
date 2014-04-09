@@ -58,23 +58,23 @@
    "provides" : {
       "Vim::X" : {
          "file" : "lib/Vim/X.pm",
-         "version" : "v0.1.0"
+         "version" : "v0.2.0"
       },
       "Vim::X::Buffer" : {
          "file" : "lib/Vim/X/Buffer.pm",
-         "version" : "v0.1.0"
+         "version" : "v0.2.0"
       },
       "Vim::X::Line" : {
          "file" : "lib/Vim/X/Line.pm",
-         "version" : "v0.1.0"
+         "version" : "v0.2.0"
       },
       "Vim::X::Plugin::ResolveConflict" : {
          "file" : "lib/Vim/X/Plugin/ResolveConflict.pm",
-         "version" : "v0.1.0"
+         "version" : "v0.2.0"
       },
       "Vim::X::Window" : {
          "file" : "lib/Vim/X/Window.pm",
-         "version" : "v0.1.0"
+         "version" : "v0.2.0"
       }
    },
    "release_status" : "stable",
@@ -89,7 +89,7 @@
          "web" : "https://github.com/yanick/Vim-X"
       }
    },
-   "version" : "0.1.0",
+   "version" : "0.2.0",
    "x_author_pledge" : {
       "version" : 1
    },
