@@ -15,10 +15,10 @@ my %module_build_args = (
   },
   "dist_abstract" => "Candy for Perl programming in Vim",
   "dist_author" => [
-    "Yanick Champoux <yanick\@babyl.dyndns.org>"
+    "Yanick Champoux <yanick\@cpan.org>"
   ],
   "dist_name" => "Vim-X",
-  "dist_version" => "0.2.0",
+  "dist_version" => "0.3.0",
   "license" => "perl",
   "module_name" => "Vim::X",
   "recommends" => {},
@@ -27,6 +27,7 @@ my %module_build_args = (
     "Carp" => 0,
     "Exporter" => 0,
     "Moo" => 0,
+    "Path::Tiny" => 0,
     "Sub::Attribute" => 0,
     "overload" => 0,
     "parent" => 0,

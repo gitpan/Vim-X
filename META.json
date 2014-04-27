@@ -1,7 +1,7 @@
 {
    "abstract" : "Candy for Perl programming in Vim",
    "author" : [
-      "Yanick Champoux <yanick@babyl.dyndns.org>"
+      "Yanick Champoux <yanick@cpan.org>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Dist::Zilla version 5.014, CPAN::Meta::Converter version 2.140640",
@@ -34,6 +34,7 @@
             "Carp" : "0",
             "Exporter" : "0",
             "Moo" : "0",
+            "Path::Tiny" : "0",
             "Sub::Attribute" : "0",
             "overload" : "0",
             "parent" : "0",
@@ -58,23 +59,23 @@
    "provides" : {
       "Vim::X" : {
          "file" : "lib/Vim/X.pm",
-         "version" : "v0.2.0"
+         "version" : "v0.3.0"
       },
       "Vim::X::Buffer" : {
          "file" : "lib/Vim/X/Buffer.pm",
-         "version" : "v0.2.0"
+         "version" : "v0.3.0"
       },
       "Vim::X::Line" : {
          "file" : "lib/Vim/X/Line.pm",
-         "version" : "v0.2.0"
+         "version" : "v0.3.0"
       },
       "Vim::X::Plugin::ResolveConflict" : {
          "file" : "lib/Vim/X/Plugin/ResolveConflict.pm",
-         "version" : "v0.2.0"
+         "version" : "v0.3.0"
       },
       "Vim::X::Window" : {
          "file" : "lib/Vim/X/Window.pm",
-         "version" : "v0.2.0"
+         "version" : "v0.3.0"
       }
    },
    "release_status" : "stable",
@@ -89,13 +90,13 @@
          "web" : "https://github.com/yanick/Vim-X"
       }
    },
-   "version" : "0.2.0",
+   "version" : "0.3.0",
    "x_author_pledge" : {
       "version" : 1
    },
    "x_authority" : "cpan:YANICK",
    "x_contributors" : [
-      "Yanick Champoux <yanick@cpan.org>"
+      "Hernan Lopes <aut_hlopes@uolinc.com>"
    ]
 }
 

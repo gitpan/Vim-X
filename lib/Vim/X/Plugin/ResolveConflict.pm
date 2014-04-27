@@ -2,7 +2,7 @@ package Vim::X::Plugin::ResolveConflict;
 BEGIN {
   $Vim::X::Plugin::ResolveConflict::AUTHORITY = 'cpan:YANICK';
 }
-$Vim::X::Plugin::ResolveConflict::VERSION = '0.2.0';
+$Vim::X::Plugin::ResolveConflict::VERSION = '0.3.0';
 use strict;
 use warnings;
 
@@ -47,11 +47,11 @@ Vim::X::Plugin::ResolveConflict
 
 =head1 VERSION
 
-version 0.2.0
+version 0.3.0
 
 =head1 AUTHOR
 
-Yanick Champoux <yanick@babyl.dyndns.org>
+Yanick Champoux <yanick@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 

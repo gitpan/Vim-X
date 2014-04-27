@@ -3,7 +3,7 @@ BEGIN {
   $Vim::X::Line::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: A line in a Vim buffer
-$Vim::X::Line::VERSION = '0.2.0';
+$Vim::X::Line::VERSION = '0.3.0';
 use Moo;
 
 
@@ -125,7 +125,7 @@ Vim::X::Line - A line in a Vim buffer
 
 =head1 VERSION
 
-version 0.2.0
+version 0.3.0
 
 =head1 METHODS
 
@@ -230,7 +230,7 @@ Sets or gets the line number of the object.
 
 =head1 AUTHOR
 
-Yanick Champoux <yanick@babyl.dyndns.org>
+Yanick Champoux <yanick@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 

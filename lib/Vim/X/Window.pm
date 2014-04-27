@@ -3,7 +3,7 @@ BEGIN {
   $Vim::X::Window::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: A window in Vim
-$Vim::X::Window::VERSION = '0.2.0';
+$Vim::X::Window::VERSION = '0.3.0';
 use strict;
 use warnings;
 
@@ -47,7 +47,7 @@ Vim::X::Window - A window in Vim
 
 =head1 VERSION
 
-version 0.2.0
+version 0.3.0
 
 =head1 FUNCTIONS
 
@@ -63,7 +63,7 @@ context, the line as a L<Vim::X::Line> object.
 
 =head1 AUTHOR
 
-Yanick Champoux <yanick@babyl.dyndns.org>
+Yanick Champoux <yanick@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 

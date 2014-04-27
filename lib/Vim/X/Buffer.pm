@@ -3,7 +3,7 @@ BEGIN {
   $Vim::X::Buffer::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: A buffer in Vim
-$Vim::X::Buffer::VERSION = '0.2.0';
+$Vim::X::Buffer::VERSION = '0.3.0';
 use Moo;
 
 has "index" => (
@@ -86,7 +86,7 @@ Vim::X::Buffer - A buffer in Vim
 
 =head1 VERSION
 
-version 0.2.0
+version 0.3.0
 
 =head1 FUNCTIONS
 
@@ -134,7 +134,7 @@ Returns the number of lines in the buffer.
 
 =head1 AUTHOR
 
-Yanick Champoux <yanick@babyl.dyndns.org>
+Yanick Champoux <yanick@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
