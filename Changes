@@ -1,5 +1,12 @@
 Revision history for Vim-X
 
+1.0.0 2014-05-07
+ [API CHANGES]
+ - vim_range() now returns a Vim::X::Range object.
+
+ [STATISTICS]
+ - code churn: 7 files changed, 210 insertions(+), 11 deletions(-)
+
 0.3.0 2014-04-27
  [BUG FIXES]
  - Removed a spurious warning. (GH#1, Hernan Lopes)

@@ -3,7 +3,7 @@ BEGIN {
   $Vim::X::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: Candy for Perl programming in Vim
-$Vim::X::VERSION = '0.3.0';
+$Vim::X::VERSION = '1.0.0';
 use strict;
 use warnings;
 
@@ -103,6 +103,7 @@ sub load_function_file {
     my $name = _func_name($file);
 
     eval "{ package Vim::X::Function::$name;\n" 
+       . "no warnings;\n"
        . Path::Tiny::path($file)->slurp
        . "\n}"
        ;
@@ -162,15 +163,11 @@ sub vim_eval {
 
 
 sub vim_range {
-    my( $min, $max ) = map { vim_eval($_) } qw/ a:firstline a:lastline /;
+    my @range = map { 0 + $_ } @_ == 2 ? @_
+                             : @_ == 1 ? ( @_ ) x 2
+                             : map { vim_eval($_) } qw/ a:firstline a:lastline /;
 
-    if( @_ ) {
-        vim_buffer->[1]->Delete( $min, $max );
-        vim_buffer->line($min)->append(@_);
-        return;
-    }
-
-    return vim_lines( $min..$max );
+    return vim_buffer->range( @range );
 }
 
 
@@ -215,7 +212,7 @@ Vim::X - Candy for Perl programming in Vim
 
 =head1 VERSION
 
-version 0.3.0
+version 1.0.0
 
 =head1 SYNOPSIS
 
@@ -419,9 +416,18 @@ consequence.
 
 Evals the given C<@expressions> and returns their results.
 
+=head2 vim_range($from, $to)
+
+=head2 vim_range($line)
+
 =head2 vim_range()
 
-Returns the range of line (if any) on which the command has been called.
+Returns a L<Vim::X::Range> object for the given lines, or single line,
+in the current buffer. The lines can be passed as indexes, or L<Vim::X::Line>
+objects.
+
+If no line whatsoever is passed, the range will be the one on 
+which the command has been called (i.e.: C<:afirstline> and C<a:lastline>).
 
 =head2 vim_command( @commands )
 

@@ -4,7 +4,7 @@ Vim::X - Candy for Perl programming in Vim
 
 # VERSION
 
-version 0.3.0
+version 1.0.0
 
 # SYNOPSIS
 
@@ -208,9 +208,18 @@ consequence.
 
 Evals the given `@expressions` and returns their results.
 
+## vim\_range($from, $to)
+
+## vim\_range($line)
+
 ## vim\_range()
 
-Returns the range of line (if any) on which the command has been called.
+Returns a [Vim::X::Range](https://metacpan.org/pod/Vim::X::Range) object for the given lines, or single line,
+in the current buffer. The lines can be passed as indexes, or [Vim::X::Line](https://metacpan.org/pod/Vim::X::Line)
+objects.
+
+If no line whatsoever is passed, the range will be the one on 
+which the command has been called (i.e.: `:afirstline` and `a:lastline`).
 
 ## vim\_command( @commands )
 

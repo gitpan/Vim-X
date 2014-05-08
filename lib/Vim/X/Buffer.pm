@@ -3,7 +3,7 @@ BEGIN {
   $Vim::X::Buffer::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: A buffer in Vim
-$Vim::X::Buffer::VERSION = '0.3.0';
+$Vim::X::Buffer::VERSION = '1.0.0';
 use Moo;
 
 has "index" => (
@@ -72,6 +72,16 @@ sub size {
     $self->_buffer->Count;
 }
 
+
+sub range {
+    require Vim::X::Range;
+    return Vim::X::Range->new(
+        _buffer => $_[0],
+        from    => $_[1],
+        to      => $_[2]
+    );
+}
+
 1;
 
 __END__
@@ -86,7 +96,7 @@ Vim::X::Buffer - A buffer in Vim
 
 =head1 VERSION
 
-version 0.3.0
+version 1.0.0
 
 =head1 FUNCTIONS
 
@@ -131,6 +141,10 @@ provided, returns all the lines of the buffer.
 =head2 size()
 
 Returns the number of lines in the buffer.
+
+=head2 range( $from, $to )
+
+Returns the L<Vim::X::Range> object for the given range of lines.
 
 =head1 AUTHOR
 

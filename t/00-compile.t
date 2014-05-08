@@ -4,7 +4,7 @@ use warnings;
 
 # this test was generated with Dist::Zilla::Plugin::Test::Compile 2.039
 
-use Test::More  tests => 5 + ($ENV{AUTHOR_TESTING} ? 1 : 0);
+use Test::More  tests => 6 + ($ENV{AUTHOR_TESTING} ? 1 : 0);
 
 
 
@@ -13,6 +13,7 @@ my @module_files = (
     'Vim/X/Buffer.pm',
     'Vim/X/Line.pm',
     'Vim/X/Plugin/ResolveConflict.pm',
+    'Vim/X/Range.pm',
     'Vim/X/Window.pm'
 );
 

@@ -3,7 +3,7 @@ BEGIN {
   $Vim::X::Window::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: A window in Vim
-$Vim::X::Window::VERSION = '0.3.0';
+$Vim::X::Window::VERSION = '1.0.0';
 use strict;
 use warnings;
 
@@ -47,7 +47,7 @@ Vim::X::Window - A window in Vim
 
 =head1 VERSION
 
-version 0.3.0
+version 1.0.0
 
 =head1 FUNCTIONS
 

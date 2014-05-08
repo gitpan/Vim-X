@@ -3,7 +3,7 @@ BEGIN {
   $Vim::X::Line::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: A line in a Vim buffer
-$Vim::X::Line::VERSION = '0.3.0';
+$Vim::X::Line::VERSION = '1.0.0';
 use Moo;
 
 
@@ -81,6 +81,7 @@ sub _search {
     my $cond = $condition;
     $cond = sub { $_[0]->content =~ $condition }  if ref $condition eq 'Regexp';
 
+    $_ = $target;
     $it->() or return until $cond->($target);
 
     $self->index( $target->index );
@@ -125,7 +126,7 @@ Vim::X::Line - A line in a Vim buffer
 
 =head1 VERSION
 
-version 0.3.0
+version 1.0.0
 
 =head1 METHODS
 
