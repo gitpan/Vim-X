@@ -3,7 +3,7 @@ BEGIN {
   $Vim::X::Range::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: A range of lines in a Vim buffer
-$Vim::X::Range::VERSION = '1.0.0';
+$Vim::X::Range::VERSION = '1.0.1';
 use Moo;
 
 use overload 
@@ -55,8 +55,7 @@ sub replace {
 
 sub from_rewind {
     my( $self, $condition ) = @_;
-    my @lines = $self->lines;
-    my $from = $lines[0];
+    my( $from ) = $self->lines;
     $from->rewind($condition) or return;
     $self->from( 0 + $from );
     return $self->from;
@@ -64,8 +63,7 @@ sub from_rewind {
 
 sub from_ff {
     my( $self, $condition ) = @_;
-    my @lines = $self->lines;
-    my $from = $lines[0];
+    my( $from ) = $self->lines;
     $from->ff($condition) or return;
     return if $from + 0 > $self->to;
     $self->from( 0 + $from );
@@ -74,8 +72,7 @@ sub from_ff {
 
 sub to_rewind {
     my( $self, $condition ) = @_;
-    my @lines = $self->lines;
-    my $to = $lines[-1];
+    my $to = ( $self->lines )[-1];
     $to->rewind($condition) or return;
     return if $to + 0 < $self->from;
     $self->to( 0 + $to );
@@ -84,8 +81,7 @@ sub to_rewind {
 
 sub to_ff {
     my( $self, $condition ) = @_;
-    my @lines = $self->lines;
-    my $to = $lines[-1];
+    my $to = ( $self->lines )[-1];
     $to->ff($condition) or return;
     $self->to( 0 + $to );
     return $self->to;
@@ -108,7 +104,7 @@ Vim::X::Range - A range of lines in a Vim buffer
 
 =head1 VERSION
 
-version 1.0.0
+version 1.0.1
 
 =head1 DESCRIPTION
 

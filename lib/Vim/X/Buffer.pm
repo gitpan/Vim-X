@@ -3,7 +3,7 @@ BEGIN {
   $Vim::X::Buffer::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: A buffer in Vim
-$Vim::X::Buffer::VERSION = '1.0.0';
+$Vim::X::Buffer::VERSION = '1.0.1';
 use Moo;
 
 has "index" => (
@@ -96,7 +96,7 @@ Vim::X::Buffer - A buffer in Vim
 
 =head1 VERSION
 
-version 1.0.0
+version 1.0.1
 
 =head1 FUNCTIONS
 

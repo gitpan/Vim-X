@@ -2,7 +2,7 @@ package Vim::X::Plugin::ResolveConflict;
 BEGIN {
   $Vim::X::Plugin::ResolveConflict::AUTHORITY = 'cpan:YANICK';
 }
-$Vim::X::Plugin::ResolveConflict::VERSION = '1.0.0';
+$Vim::X::Plugin::ResolveConflict::VERSION = '1.0.1';
 use strict;
 use warnings;
 
@@ -47,7 +47,7 @@ Vim::X::Plugin::ResolveConflict
 
 =head1 VERSION
 
-version 1.0.0
+version 1.0.1
 
 =head1 AUTHOR
 

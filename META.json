@@ -4,7 +4,7 @@
       "Yanick Champoux <yanick@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.014, CPAN::Meta::Converter version 2.140640",
+   "generated_by" : "Dist::Zilla version 5.023, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "perl_5"
    ],
@@ -16,12 +16,12 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Module::Build" : "0.3601"
+            "Module::Build" : "0.28"
          }
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.3601"
+            "Module::Build" : "0.28"
          }
       },
       "develop" : {
@@ -59,27 +59,27 @@
    "provides" : {
       "Vim::X" : {
          "file" : "lib/Vim/X.pm",
-         "version" : "v1.0.0"
+         "version" : "v1.0.1"
       },
       "Vim::X::Buffer" : {
          "file" : "lib/Vim/X/Buffer.pm",
-         "version" : "v1.0.0"
+         "version" : "v1.0.1"
       },
       "Vim::X::Line" : {
          "file" : "lib/Vim/X/Line.pm",
-         "version" : "v1.0.0"
+         "version" : "v1.0.1"
       },
       "Vim::X::Plugin::ResolveConflict" : {
          "file" : "lib/Vim/X/Plugin/ResolveConflict.pm",
-         "version" : "v1.0.0"
+         "version" : "v1.0.1"
       },
       "Vim::X::Range" : {
          "file" : "lib/Vim/X/Range.pm",
-         "version" : "v1.0.0"
+         "version" : "v1.0.1"
       },
       "Vim::X::Window" : {
          "file" : "lib/Vim/X/Window.pm",
-         "version" : "v1.0.0"
+         "version" : "v1.0.1"
       }
    },
    "release_status" : "stable",
@@ -87,19 +87,20 @@
       "bugtracker" : {
          "web" : "https://github.com/yanick/Vim-X/issues"
       },
-      "homepage" : "http://search.cpan.org/dist/Vim-X/",
+      "homepage" : "https://github.com/yanick/Vim-X",
       "repository" : {
          "type" : "git",
          "url" : "https://github.com/yanick/Vim-X.git",
          "web" : "https://github.com/yanick/Vim-X"
       }
    },
-   "version" : "1.0.0",
+   "version" : "1.0.1",
    "x_author_pledge" : {
       "version" : 1
    },
    "x_authority" : "cpan:YANICK",
    "x_contributors" : [
+      "Graham Todd <gtodd@iciti.ca>",
       "Hernan Lopes <aut_hlopes@uolinc.com>"
    ]
 }

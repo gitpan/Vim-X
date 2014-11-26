@@ -3,7 +3,7 @@ BEGIN {
   $Vim::X::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: Candy for Perl programming in Vim
-$Vim::X::VERSION = '1.0.0';
+$Vim::X::VERSION = '1.0.1';
 use strict;
 use warnings;
 
@@ -18,6 +18,7 @@ our @EXPORT = qw/
     vim_call
     vim_lines
     vim_append
+    vim_eval
     vim_range
     vim_line
 vim_delete /;
@@ -212,7 +213,7 @@ Vim::X - Candy for Perl programming in Vim
 
 =head1 VERSION
 
-version 1.0.0
+version 1.0.1
 
 =head1 SYNOPSIS
 
@@ -227,7 +228,7 @@ version 1.0.0
         my %var;
 
         for my $line ( vim_lines ) {
-            $var{$1}++ while $line =~ /[$@%](\s+)/g;
+            $var{$1}++ while $line =~ /[$@%](\w+)/g;
         }
 
         my ( $most_used ) = reverse sort { $var{$a} <=> $var{$b} } keys %var;
